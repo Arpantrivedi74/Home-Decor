@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Decor - Beds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        header {
+            background-color: #40916c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-color: #e0e0e0;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h2 {
+            color: #40916c;
+        }
+
+        .gallery {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery h2 {
+            color: #333;
+        }
+
+        .bed-item {
+            display: inline-block;
+            margin: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .bed-item img {
+            width: 250px;
+            height: 250px;
+            border-radius: 8px;
+        }
+
+        .bed-item p {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #40916c;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Home Decor - Cozy Beds</h1>
+        <nav>
+            <ul>
+                <li><a href="./Home decor.html">Home</a></li>
+                <li><a href="#">Beds</a></li>
+                <li><a href="#">Furniture</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Find Comfort and Style with Our Premium Beds</h2>
+        <p>Discover the perfect bed for a peaceful night's sleep. Choose from modern, classic, or minimalist designs.</p>
+    </section>
+
+    <section class="gallery">
+        <h2>Featured Beds</h2>
+        <div class="bed-item">
+            <img src="data:image/jpeg;base64,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" alt="Modern Upholstered Bed">
+            <p>Modern Upholstered Bed - $600</p>
+        </div>
+        <div class="bed-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTho1-gsJh_x09r5YhMQqXT_Jecj8-z4PPOoA&s" alt="Classic Wooden Bed">
+            <p>Classic Wooden Bed - $750</p>
+        </div>
+        <div class="bed-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4twsDncBQr1lO8FMfXN4uVRNLNKp3MXFbiw&s" alt="Minimalist Metal Bed">
+            <p>Minimalist Metal Bed - $500</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Home Decor. All rights reserved.</p>
+    </footer>
+</body>
+</html>

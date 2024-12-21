@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Décor | Design Your Space</title>
+    <link rel="icon" href="Brown and White Minimalist Elegant Simple Home Decor Company Logo.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+
+        .banner {
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://c0.wallpaperflare.com/preview/410/960/1014/apartment-bed-bedroom-book-shelves.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .navbar {
+            width: 85%;
+            margin: auto;
+            padding: 35px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 120px;
+            cursor: pointer;
+        }
+
+        .navbar ul {
+            list-style: none;
+        }
+
+        .navbar ul li {
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .navbar ul li::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 3px;
+            background: green;
+            transition: width 0.3s;
+        }
+
+        .navbar ul li:hover::after {
+            width: 100%;
+        }
+
+        .content {
+            text-align: center;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .content h1 {
+            font-size: 70px;
+            margin-bottom: 20px;
+            animation: glow 2s infinite;
+        }
+
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 5px white, 0 0 10px green, 0 0 20px green, 0 0 30px green;
+            }
+            50% {
+                text-shadow: 0 0 10px white, 0 0 20px green, 0 0 40px green, 0 0 50px green;
+            }
+            100% {
+                text-shadow: 0 0 5px white, 0 0 10px green, 0 0 20px green, 0 0 30px green;
+            }
+        }
+
+        .content p {
+            font-size: 25px;
+            font-weight: 100;
+            margin-bottom: 40px;
+        }
+
+        button {
+            width: 200px;
+            padding: 15px 0;
+            border-radius: 5px;
+            border: 1px solid green;
+            background: transparent;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 20px 10px;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: none;
+            min-width: 50px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: crimson;
+            padding: 12px 15px;
+            text-decoration: none;
+            display: block;
+            font-size: small;
+        }
+
+        .dropdown-content a:hover {
+            background-color: rgb(57, 18, 211);
+        }
+
+        .navbar li:hover .dropdown-content {
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="https://cdn.freebiesupply.com/logos/large/2x/interior-logo-png-transparent.png" class="logo">
+            <ul>
+                <li><a href="./Home decor.html">Home</a></li>
+                <li><a href="./Bedroom.html">Bedroom</a>
+                    <ul class="dropdown-content">
+                        <li><a href="./Mirror.html">Mirror</a></li>
+                        <li><a href="./BED.html">Bed</a></li>
+                        <li><a href="./Cupboard.html">Cupboard</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Dinning.html">Dining</a>
+                    <ul class="dropdown-content">
+                        <li><a href="./chairs.html">Table and Chairs</a></li>
+                        <li><a href="./sofa.html">Sofa</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Kitchen.html">Kitchen</a>
+                    <ul class="dropdown-content">
+                        <li><a href="./Wardrobe.html">Wardrobe</a></li>
+                        <li><a href="./Dishes.html">Dishes</a></li>
+                        <li><a href="./Sink.html">Sink</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Backyard.html">Backyard</a>
+                    <ul class="dropdown-content">
+                        <li><a href="./Plants.html">Plants</a></li>
+                        <li><a href="./Statues.html">Statues</a></li>
+                        <li><a href="./Sitting area.html">Sitting Area</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>DESIGN YOUR HOME</h1>
+            <p>Create your dream home with elegance and style. Start your journey today !</p>
+            <button type="button"><a href="./CONTACT US.html" style="text-decoration: none; color: white;"> </a>CONTACT US</a></button>
+            <button type="button"><a href="subscribe.html" style="text-decoration: none; color: white;"> </a>SUBSCRIBE</a></button>
+        </div>
+    </div>
+    <script>
+        const titleText = "HOME-DECOR";
+        let index = 0;
+
+        function animateTitle() {
+            document.title = titleText.substring(0, index);
+            index++;
+            if (index > titleText.length) {
+                index = 0;
+            }
+        }
+
+        setInterval(animateTitle, 300); // Adjust speed of animation here
+    </script>
+</body>
+</html>
