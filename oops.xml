@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<youtube>
+  <channels>
+    <channel>
+      <name>India TV</name>
+      <description>India TV is a pro-government Hindi news channel based in Noida, Uttar Pradesh.</description>
+      <subscribers>20M</subscribers>
+    </channel>
+    <channel>
+      <name>News 18</name>
+      <description>News18 India is an Indian Media television channel owned by Network18 Group.</description>
+      <subscribers>20M</subscribers>
+    </channel>
+  </channels>
+</youtube>

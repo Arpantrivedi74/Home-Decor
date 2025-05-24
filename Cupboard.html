@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Decor - Cupboards</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #40916c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-color: #ddd;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h2 {
+            color: #40916c;
+        }
+
+        .gallery {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .gallery h2 {
+            color: #333;
+        }
+
+        .cupboard-item {
+            display: inline-block;
+            margin: 15px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .cupboard-item img {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+        }
+
+        .cupboard-item p {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #40916c;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Home Decor - Elegant Cupboards</h1>
+        <nav>
+            <ul>
+                <li><a href="./Home decor.html">Home</a></li>
+                <li><a href="#">Cupboards</a></li>
+                <li><a href="#">Furniture</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Discover Stylish and Functional Cupboards</h2>
+        <p>Browse our collection of modern and classic cupboards to organize your space in style.</p>
+    </section>
+
+    <section class="gallery">
+        <h2>Featured Cupboards</h2>
+        <div class="cupboard-item">
+            <img src="data:image/jpeg;base64,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" alt="Modern Sliding Door Cupboard">
+            <p>Modern Sliding Door Cupboard - $450</p>
+        </div>
+        <div class="cupboard-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnLxtivQ9y0pRz2aPlCiDAsOamZOT16a_RJA&s" alt="Classic Wooden Cupboard">
+            <p>Classic Wooden Cupboard - $600</p>
+        </div>
+        <div class="cupboard-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS--m_XdLU2WiUl3jbTE_0Aj0McssnsqDIbg&s" alt="Compact Metal Cupboard">
+            <p>Compact Metal Cupboard - $300</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Home Decor. All rights reserved.</p>
+    </footer>
+</body>
+</html>
